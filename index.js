@@ -10,6 +10,7 @@ const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
   res.send('Hello Man!')
+  res.send(`${process.env.PASSWORD}`)
 })
 
 app.listen(port, () => {
