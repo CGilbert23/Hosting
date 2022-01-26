@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start-dev": "env-cmd -e development node index.js",
+    "start": "env-cmd -e production node index.js"
   },
-  "engines":{
-    "node": "14.x"},
+  "engines": {
+    "node": "14.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "env-cmd": "^10.1.0",
     "express": "^4.17.2"
   }
 }
