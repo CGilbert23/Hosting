@@ -10,7 +10,7 @@ const URL = process.env.URL
 // mongoose.connect( mongoAtlasUri, {useNewUrlParser: true, useUnifiedTopology: true})
 
 app.get('/', (req, res) => {
-  res.send(`Hello Man! You are on ${URL}`)
+  res.send(`Hello Man! ${URL}`)
 })
 
 app.listen(port, () => {
