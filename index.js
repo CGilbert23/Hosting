@@ -9,9 +9,7 @@ const password = process.env.PASSWORD
 // mongoose.connect( mongoAtlasUri, {useNewUrlParser: true, useUnifiedTopology: true})
 
 app.get('/', (req, res) => {
-  res.send('Hello Man!')
-  console.log("Bye")
-  console.log({password})
+  res.send(`Hello Man!, here is your ${password}`)
 })
 
 app.listen(port, () => {
