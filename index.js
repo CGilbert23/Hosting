@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
-
+const password = process.env.PASSWORD
 /* 
     Incase you are using mongodb atlas database uncomment below line
     and replace "mongoAtlasUri" with your mongodb atlas uri.
@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
   res.send('Hello Man!')
-  res.send(`${process.env.PASSWORD}`)
+  res.send({password})
 })
 
 app.listen(port, () => {
