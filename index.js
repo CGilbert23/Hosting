@@ -10,7 +10,8 @@ const password = process.env.PASSWORD
 
 app.get('/', (req, res) => {
   res.send('Hello Man!')
-  res.send({password})
+  console.log("Bye")
+  console.log({password})
 })
 
 app.listen(port, () => {
